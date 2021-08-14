@@ -103,7 +103,7 @@ function generatePassword() {
     finalGeneratedPassword += passwordArray[Math.floor(Math.random() * passwordArray.length)]
   
   }
-  //Returns final generated password string 
+  //Returns final generated password as a string in display box 
   return finalGeneratedPassword;
 };
 
