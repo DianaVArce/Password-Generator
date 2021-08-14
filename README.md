@@ -18,7 +18,7 @@ special characters, numerals, lowercase, and uppercase characters at the user's 
 
 ## Link to the password generator
 Want to test out the password generator and get a secure password for all your logins? Follow this link!
-
+https://dianavarce.github.io/Password-Generator/
         
 ![This is what the password generated looks like](./assets/password-generator-demo.png)
 
