@@ -41,7 +41,7 @@ function userPasswordChoices(){
   //Condition statement in case user did not select any character type
   if(!specialCharaConfirm && !numeralCharaConfirm && !upperCaseCharaConfirm && !lowerCaseCharaConfirm){
     alert("Must select at least one character type."); 
-    return;
+    return false;
   }
     
   //Object created to store user's password confirmations
