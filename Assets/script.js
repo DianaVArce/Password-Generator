@@ -19,17 +19,17 @@ function userPasswordChoices(){
   //Confirming that user entered a valid number for password generator
   if(isNaN(userLength)){
     alert("Please enter a valid number between 8 and 129.");
-    
+    return false;
   }
  
   //If valid number entered, check if the length is valid for generator
   if(userLength < 8){
     alert("Password length must be at least 8 characters.");
-    return;      
+    return false;      
   }
   else if(userLength > 129){
     alert("Password length must be less than 129 characters.")
-    return;
+    return false;
   }
 
   //Confirmation of type of characters to use to generate password
