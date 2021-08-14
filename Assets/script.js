@@ -14,6 +14,7 @@ var lowerCaseCharacters = ["a","b","c","d","e","f","g","h","i","j",
 
 //Function to declare all the user's password preferences
 function userPasswordChoices(){
+  //Ask user for how long of a password they want
   var userLength = prompt("How many characters would you like your password to contain: ");
 
   //Confirming that user entered a valid number for password generator
@@ -22,7 +23,7 @@ function userPasswordChoices(){
     return false;
   }
  
-  //If valid number entered, check if the length is valid for generator
+  //If valid number entered, check if the length is valid for the generator
   if(userLength < 8){
     alert("Password length must be at least 8 characters.");
     return false;      
@@ -94,16 +95,16 @@ function generatePassword() {
     passwordArray.push (userGivenChoices[Math.floor(Math.random() * userGivenChoices.length)]);
   }
   
-  //Convert the possible generated password array to final password string
-  var finalPwd = "";
+  //Create the final password as a string
+  var finalGeneratedPassword = "";
+
+  //Creates the final randomized password, using the randomized password array and convert the array to given string
   for(var i = 0; i < passwordOptions.userlength; i++) {
-    finalPwd = finalPwd + passwordArray[Math.floor(Math.random() * passwordArray.length)]
+    finalGeneratedPassword += passwordArray[Math.floor(Math.random() * passwordArray.length)]
   
   }
-
- // console.log(finalPwd);
-  return finalPwd;
- 
+  //Returns final generated password string 
+  return finalGeneratedPassword;
 };
 
 
